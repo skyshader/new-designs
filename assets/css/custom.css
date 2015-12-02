@@ -18,6 +18,7 @@ a {
 .header-wrapper {
   width: 100%;
   background: #155674;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
 }
 
 .header {
@@ -34,6 +35,7 @@ a {
 .logo-text {
   color: #eeeeee;
   font-size: 24px;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
 }
 
 .main-search {
@@ -42,26 +44,50 @@ a {
 }
 
 .main-search i {
-  color: #003D5B;
-  font-size: 20px;
+  float: left;
+  display: inline-block;
+  color: #003755;
+  /*color: rgba(238, 238, 238, 0.8);*/
+  /*color: #60BEB3;*/
+  font-size: 16px;
+  width: 18px;
+  height: 18px;
+  margin-top:22px;
 }
 
 .main-search .search-box {
+  float: left;
   background: #155674;
-  width: 90%;
+  width: 560;
   border: 0;
   outline: 0;
   padding: 20px 0;
   margin-left: 10px;
+  font-family: 'Roboto', sans-serif;
   font-size: 17px;
-  font-weight: lighter;
+  font-weight: 400;
   color: #EEEEEE;
 }
 
-.main-search .search-box::-webkit-input-placeholder { color: rgba(238, 238, 238, 0.5); }
-.main-search .search-box:-moz-placeholder { color: rgba(238, 238, 238, 0.5); }
-.main-search .search-box::-moz-placeholder { color: rgba(238, 238, 238, 0.5); }
-.main-search .search-box:-ms-input-placeholder { color: rgba(238, 238, 238, 0.5); }
+.main-search .separator {
+  display: inline-block;
+  float: left;
+  width: 1px;
+  height: 34px;
+  margin-top: 12px;
+  margin-left: 4px;
+  background: #003755; /* Old browsers */
+  background: -moz-linear-gradient(top,  rgba(0, 55, 85, 0) 0%, #003755 20%, #003755 80%, rgba(0, 55, 85, 0) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  rgba(0, 55, 85, 0) 0%,#003755 20%,#003755 80%,rgba(0, 55, 85, 0) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  rgba(0, 55, 85, 0) 0%,#003755 20%,#003755 80%,rgba(0, 55, 85, 0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+  box-shadow: 1px 0 3px rgba(0, 0, 0, 0.2);
+}
+
+.main-search .search-box::-webkit-input-placeholder { color: rgba(238, 238, 238, 0.4); }
+.main-search .search-box:-moz-placeholder { color: rgba(238, 238, 238, 0.4); }
+.main-search .search-box::-moz-placeholder { color: rgba(238, 238, 238, 0.4); }
+.main-search .search-box:-ms-input-placeholder { color: rgba(238, 238, 238, 0.4); }
 
 .main-nav {
   width: 400px;
@@ -79,16 +105,17 @@ a {
 }
 
 .main-nav li a {
-  color: #fff;
+  color: #dfdfdf;
   font-size: 12px;
   text-transform: uppercase;
   padding: 24px 20px 18px 20px;
   border-bottom: 4px solid #155674;
+  transition: 0.3s all ease;
 }
 
 .main-nav li a:hover {
-  background: #003D5B;
-  border-bottom: 4px solid #60BEB3;
+  color: #fff;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
 }
 
 .main-nav li a.nav-item:last-child {
@@ -96,6 +123,7 @@ a {
 }
 
 .main-nav li a.nav-button {
+  color: #fff;
   padding: 8px 16px;
   background: #60BEB3;
   border-radius: 4px;
@@ -105,6 +133,7 @@ a {
 
 .main-nav li a.nav-button:hover {
   background: #58B6AB;
+  text-shadow: none;
 }
 
 .main-nav li a.login-nav-button {
@@ -124,6 +153,5 @@ a {
 .main-nav li a.signup-nav-button:active {
   box-shadow: inset -3px 3px 5px rgba(0, 0, 0, 0.1);
 }
-
 
 /* end: style components */
