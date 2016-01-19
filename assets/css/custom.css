@@ -237,18 +237,13 @@ body {
 
 .business-main-area {
     min-height: 500px;
-    border-radius: 3px;
-    border-width: 1px;
-    border-style: solid;
-    border-color: #F5F6F9 #EFF0F4 #E0E1E5;
-    background: #fff;
 }
 
 .business-sidebar-right {
     min-height: 500px;
 }
 
-.business-photos {
+.business-photos, .business-video {
     background: #fff;
     margin-right: -15px;
     border-radius: 3px;
@@ -257,6 +252,7 @@ body {
     border-color: #F5F6F9 #EFF0F4 #E0E1E5;
     min-height: 200px;
     padding: 0px 2px;
+    margin-bottom: 15px;
 }
 
 .business-map-address {
@@ -341,5 +337,71 @@ body {
     border-width: 1px;
     border-style: solid;
     border-color: #F5F6F9 #EFF0F4 #E0E1E5;
+}
+
+.business-offers {
+    border-radius: 3px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #F5F6F9 #EFF0F4 #E0E1E5;
+    background: #fff;
+    min-height: 120px;
+    padding: 0px 2px;
+    padding-bottom: 2px;
+}
+
+.business-video-container-sidebar {
+    padding: 0px 1px;
+}
+
+.business-video-holder {
+    height: 160px;
+    background: #222;
+    border-radius: 3px;
+}
+
+.business-offers .tile-heading {
+    border-bottom: 1px solid #f2f2f2;
+}
+
+.business-offer-block {
+    min-height: 70px;
+    border-bottom: 1px dashed #F5F6F9;
+}
+
+.business-offer-block:last-child {
+    border-bottom: none;
+}
+
+.offer-headline h3 {
+    text-align: center;
+    color: #00A0FF;
+    font-size: 20px;
+    margin: 0px;
+    padding: 15px 0px 5px;
+}
+
+.offer-valid p {
+    text-align: center;
+    font-size: 14px;
+    color: #888;
+    margin: 0px;
+    padding-bottom: 15px;
+}
+
+.more-block {
+    min-height: 30px;
+    text-align: center;
+}
+
+.more-link {
+    display: block;
+    line-height: 20px;
+    padding: 5px 0px;
+    background: #fbfbfb;
+}
+
+.more-link:hover {
+    background: #f8f8f8;
 }
 /* end: component styles */
