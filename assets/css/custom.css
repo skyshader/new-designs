@@ -288,7 +288,9 @@ body {
 
 .tile-heading i {
     color: #00A0FF;
-    margin-right: 10px;
+    margin-right: 5px;
+    width: 14px;
+    height: 14px;
 }
 
 .tile-heading a {
@@ -403,5 +405,55 @@ body {
 
 .more-link:hover {
     background: #f8f8f8;
+}
+
+.list-item {
+    margin: 3px;
+    min-height: 70px;
+    background: #fbfbfb;
+    border-radius: 3px 3px 0 0;
+    border-bottom: 1px solid #f2f2f2;
+}
+
+.list-item .tile-heading {
+    padding: 6px 0px;
+    margin: 0px 8px;
+    border-bottom: 1px solid #f2f2f2;
+}
+
+.list-item .yes-tag {
+    font-size: 10px;
+    margin-left: 8px;
+    color: #34AC21;
+    float: right;
+    margin-top: 2px;
+}
+
+.list-item .no-tag {
+    font-size: 10px;
+    margin-left: 8px;
+    color: #AC3421;
+    float: right;
+    margin-top: 2px;
+}
+
+.list-item .tile-content {
+    padding: 10px 0px;
+    margin: 0px 8px;
+}
+
+.list-item .tile-content p {
+    margin: 0px;
+    font-size: 12px;
+}
+
+.list-item .tile-content p a {
+    float: right;
+}
+
+.list-item .tile-content-info {
+    color: #888;
+    display: block;
+    padding-top: 8px;
 }
 /* end: component styles */
